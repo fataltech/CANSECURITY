@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-project-lite/sample.zip",
       "projectGuid": "60591346-b121-4a39-8f2c-e7f0ff82e511",
-      "lastModifiedDate": 1455056889292,
+      "lastModifiedDate": 1455068487266,
       "creationDate": 1455056850975
     },
     "XDK-app-designer": "false",
@@ -50,7 +50,8 @@
         "gitref": "",
         "name": "Device",
         "description": "Cordova Device Plugin",
-        "checksum": "adfc61ba"
+        "checksum": "adfc61ba",
+        "cordovaVersion": ">=3.0.0"
       },
       {
         "id": "cordova-plugin-splashscreen",
@@ -67,7 +68,36 @@
         "gitref": "",
         "name": "Splashscreen",
         "description": "Cordova Splashscreen Plugin",
-        "checksum": "170efb68"
+        "checksum": "170efb68",
+        "cordovaVersion": ">=3.0.0"
+      },
+      {
+        "id": "cordova-plugin-bluetoothle",
+        "name": "Bluetooth LE",
+        "version": "3.0.1",
+        "originType": "repo",
+        "origin": "https://github.com/randdusing/cordova-plugin-bluetoothle.git",
+        "gitref": "",
+        "subdir": ".",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-bluetoothle",
+        "selectedState": "Included",
+        "checksum": "a688bb0a",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Rand Dusing",
+        "permissions": {
+          "android:name": [
+            "android.permission.BLUETOOTH",
+            "android.permission.BLUETOOTH_ADMIN",
+            "android.permission.ACCESS_COARSE_LOCATION"
+          ]
+        },
+        "description": "Use the Bluetooth Low Energy plugin to connect your Cordova app to new Bluetooth devices like heart rate monitors, thermometers, etc...",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
       }
     ],
     "buildConfigurations": {
@@ -96,7 +126,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "5.1.1",
-        "crosswalkVersion_": "14",
+        "crosswalkVersion_": "15",
         "appVersion_": "0.0.1",
         "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser.",
         "appAuthor_": "Intel XDK",
